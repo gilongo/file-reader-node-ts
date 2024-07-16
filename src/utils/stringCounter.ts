@@ -5,8 +5,8 @@ export class StringCounter {
     }
 
     static countLetters(str: string): number {
-        str = str.replace(/\s/g, '');
-        return str.trim().length;
+        const letters = str.match(/[a-zA-Z]/g);
+        return letters ? letters.length : 0;
     }
 
     static countWhitespaces(str: string): number {
