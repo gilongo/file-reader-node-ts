@@ -1,29 +1,29 @@
 {
   "compilerOptions": {
-    "target": "ES2021",                          // Use a modern ECMAScript target
-    "module": "commonjs",                        // Specify module code generation
-    "moduleResolution": "node",                  // Use Node's module resolution strategy
-    "outDir": "./dist",                          // Redirect output structure to the 'dist' directory
-    "rootDir": "./src",                          // Specify the root directory of input files
-    "strict": true,                              // Enable all strict type-checking options
-    "esModuleInterop": true,                     // Enable compatibility with ES modules
-    "forceConsistentCasingInFileNames": true,    // Ensure consistent casing in file names
-    "skipLibCheck": true,                        // Skip type checking of declaration files
-    "sourceMap": true,                           // Generate corresponding source maps
-    "resolveJsonModule": true,                   // Allow importing JSON modules
-    "allowSyntheticDefaultImports": true,        // Allow default imports from modules with no default export
-    "incremental": true,                         // Enable incremental compilation
-    "noFallthroughCasesInSwitch": true,          // Report errors for fallthrough cases in switch statements
-    "noImplicitReturns": true,                   // Report errors for code paths that do not explicitly return a value
-    "noUnusedLocals": true,                      // Report errors for unused local variables
-    "noUnusedParameters": true,                  // Report errors for unused parameters
-    "lib": ["ES2021", "DOM"],                    // Specify library files to be included
-    "typeRoots": ["./node_modules/@types"],      // Specify the type declaration file directories
-    "baseUrl": "./",                             // Base directory to resolve non-relative module names
-    "paths": {                                   // Map module names to locations relative to the baseUrl
+    "target": "ES2021",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": ["ES2021", "DOM"],
+    "typeRoots": ["./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
       "@src/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "tests/**/*"],         // Specify the input files to be included
+  "include": ["src/**/*"],         // Specify the input files to be included
   "exclude": ["node_modules", "dist"]            // Specify the files to be excluded
 }
