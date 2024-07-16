@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./files/:/usr/src/app/files
+    environment:
+      - NODE_ENV=production
