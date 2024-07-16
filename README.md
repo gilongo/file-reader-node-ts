@@ -43,6 +43,12 @@ To start using the app make a <strong>POST</strong> request at `/api/files/read`
 Below there are a couple of URL to test the application.
 To test it with a local file, modify the file "test.txt" inside the "files" folder, or create a txt file in it.
 
+## Run tests
+
+```bash
+npm test
+```
+
 ## Project Structure
 
 ```
@@ -60,13 +66,16 @@ To test it with a local file, modify the file "test.txt" inside the "files" fold
 │   ├── utils
 │   │   ├── stringCounter.ts
 │   │   └── stringValidation.ts
-│   └── index.ts
+│   └── app.ts
+├── tests
+|
 ├── docker-compose.yml
 ├── Dockerfile
 ├── Makefile
 ├── package.json
 ├── README.md
 ├── tsconfig.json
+├── jest.config.ts
 ├── .nvmrc
 └── .env
 ```
