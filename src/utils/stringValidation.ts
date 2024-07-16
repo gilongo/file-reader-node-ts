@@ -1,8 +1,8 @@
 export class StringValidation {
     static isValidURL(url: string): boolean {
         try {
-            new URL(url);
-            return true;
+            const parsedUrl = new URL(url);
+            return ['http:', 'https:'].includes(parsedUrl.protocol);
           } catch (e) {
             return false;
           }
