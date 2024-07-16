@@ -24,6 +24,6 @@
       "@src/*": ["src/*"]
     }
   },
-  "include": ["src/**/*"],                       // Specify the input files to be included
+  "include": ["src/**/*", "tests/**/*"],         // Specify the input files to be included
   "exclude": ["node_modules", "dist"]            // Specify the files to be excluded
 }

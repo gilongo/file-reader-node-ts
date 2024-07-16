@@ -1,4 +1,4 @@
-import { StringValidation } from "./stringValidation";
+import { StringValidation } from "../../src/utils/stringValidation";
 
 
 describe('StringValidation', () => {

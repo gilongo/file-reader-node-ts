@@ -1,4 +1,4 @@
-import { StringCounter } from "./stringCounter";
+import { StringCounter } from "../../src/utils/stringCounter";
 
 const tenWords = "Questa frase ha l'aspetto di un linguaggio latino intelligente";
 const twentyWords = "Durante il 1500 di Sony A, una stampante adattato il testo di Cicero per sviluppare una pagina degli esempi di tipo.";
